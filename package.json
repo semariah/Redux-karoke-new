@@ -1,0 +1,19 @@
+{
+  "name": "redux_karaoke_blank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epicodus-lessons/redux_karaoke_blank.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/epicodus-lessons/redux_karaoke_blank/issues"
+  },
+  "homepage": "https://github.com/epicodus-lessons/redux_karaoke_blank#readme"
+}
