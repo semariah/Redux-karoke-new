@@ -7,6 +7,16 @@ const initialState = {
   arrayPosition: 0,
 }
 
+//Reducer
+const reducer = (state = initialState, action) => {
+  return state;
+}
+
+//JEST test
+const { expect } = window;
+
+expect(reducer(initialState, {type: null})).toEqual(initialState);
+
 
 //Redux Store
 const { createStore } = Redux
