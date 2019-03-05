@@ -9,13 +9,28 @@ const initialState = {
 
 //Reducer
 const reducer = (state = initialState, action) => {
-  return state;
+  switch (action.type) {
+    case 'NEXT_LYRIC':
+      let newArrayPosition = state.arrayPosition + 1;
+      let newState = {
+        songLyricsArray: state.songLyricsArray,
+        arrayPosition: newArrayPosition,
+      }
+      return newState;
+    default:
+      return state;
+  }  
 }
 
 //JEST test
 const { expect } = window;
 
 expect(reducer(initialState, {type: null})).toEqual(initialState);
+
+expect(reducer(initialState, {type: 'NEXT_LYRIC'})).toEqual({
+  songLyricsArray: songLyricsArray,
+  arrayPosition: 1
+});
 
 
 //Redux Store
